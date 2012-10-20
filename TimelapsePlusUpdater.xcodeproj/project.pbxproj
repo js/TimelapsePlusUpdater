@@ -16,6 +16,12 @@
 		04440A8316334B9E00E6D554 /* libusb-compat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04440A7D16334B8000E6D554 /* libusb-compat.a */; };
 		04440A8416334B9E00E6D554 /* libusb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04440A7B16334B8000E6D554 /* libusb.a */; };
 		04440A8616334BA400E6D554 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04440A8516334BA400E6D554 /* IOKit.framework */; };
+		04440A9816334D4C00E6D554 /* arguments.c in Sources */ = {isa = PBXBuildFile; fileRef = 04440A8916334D4C00E6D554 /* arguments.c */; };
+		04440A9916334D4C00E6D554 /* atmel.c in Sources */ = {isa = PBXBuildFile; fileRef = 04440A8B16334D4C00E6D554 /* atmel.c */; };
+		04440A9A16334D4C00E6D554 /* commands.c in Sources */ = {isa = PBXBuildFile; fileRef = 04440A8D16334D4C00E6D554 /* commands.c */; };
+		04440A9B16334D4C00E6D554 /* dfu.c in Sources */ = {isa = PBXBuildFile; fileRef = 04440A9116334D4C00E6D554 /* dfu.c */; };
+		04440A9C16334D4C00E6D554 /* intel_hex.c in Sources */ = {isa = PBXBuildFile; fileRef = 04440A9316334D4C00E6D554 /* intel_hex.c */; };
+		04440A9E16334D4C00E6D554 /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = 04440A9616334D4C00E6D554 /* util.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +71,21 @@
 		04440A6B16334B3300E6D554 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		04440A7216334B8000E6D554 /* libusb.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libusb.xcodeproj; path = "libusb-xcode/libusb.xcodeproj"; sourceTree = "<group>"; };
 		04440A8516334BA400E6D554 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		04440A8916334D4C00E6D554 /* arguments.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = arguments.c; path = "dfu-programmer-0.5.4/src/arguments.c"; sourceTree = "<group>"; };
+		04440A8A16334D4C00E6D554 /* arguments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = arguments.h; path = "dfu-programmer-0.5.4/src/arguments.h"; sourceTree = "<group>"; };
+		04440A8B16334D4C00E6D554 /* atmel.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = atmel.c; path = "dfu-programmer-0.5.4/src/atmel.c"; sourceTree = "<group>"; };
+		04440A8C16334D4C00E6D554 /* atmel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atmel.h; path = "dfu-programmer-0.5.4/src/atmel.h"; sourceTree = "<group>"; };
+		04440A8D16334D4C00E6D554 /* commands.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = commands.c; path = "dfu-programmer-0.5.4/src/commands.c"; sourceTree = "<group>"; };
+		04440A8E16334D4C00E6D554 /* commands.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = commands.h; path = "dfu-programmer-0.5.4/src/commands.h"; sourceTree = "<group>"; };
+		04440A8F16334D4C00E6D554 /* dfu-bool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "dfu-bool.h"; path = "dfu-programmer-0.5.4/src/dfu-bool.h"; sourceTree = "<group>"; };
+		04440A9016334D4C00E6D554 /* dfu-device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "dfu-device.h"; path = "dfu-programmer-0.5.4/src/dfu-device.h"; sourceTree = "<group>"; };
+		04440A9116334D4C00E6D554 /* dfu.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = dfu.c; path = "dfu-programmer-0.5.4/src/dfu.c"; sourceTree = "<group>"; };
+		04440A9216334D4C00E6D554 /* dfu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dfu.h; path = "dfu-programmer-0.5.4/src/dfu.h"; sourceTree = "<group>"; };
+		04440A9316334D4C00E6D554 /* intel_hex.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = intel_hex.c; path = "dfu-programmer-0.5.4/src/intel_hex.c"; sourceTree = "<group>"; };
+		04440A9416334D4C00E6D554 /* intel_hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = intel_hex.h; path = "dfu-programmer-0.5.4/src/intel_hex.h"; sourceTree = "<group>"; };
+		04440A9516334D4C00E6D554 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = main.c; path = "dfu-programmer-0.5.4/src/main.c"; sourceTree = "<group>"; };
+		04440A9616334D4C00E6D554 /* util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = util.c; path = "dfu-programmer-0.5.4/src/util.c"; sourceTree = "<group>"; };
+		04440A9716334D4C00E6D554 /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = util.h; path = "dfu-programmer-0.5.4/src/util.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,9 +176,32 @@
 		04440A7E16334B8400E6D554 /* External */ = {
 			isa = PBXGroup;
 			children = (
+				04440A8816334D2D00E6D554 /* dfu-programmer */,
 				04440A7216334B8000E6D554 /* libusb.xcodeproj */,
 			);
 			name = External;
+			sourceTree = "<group>";
+		};
+		04440A8816334D2D00E6D554 /* dfu-programmer */ = {
+			isa = PBXGroup;
+			children = (
+				04440A8916334D4C00E6D554 /* arguments.c */,
+				04440A8A16334D4C00E6D554 /* arguments.h */,
+				04440A8B16334D4C00E6D554 /* atmel.c */,
+				04440A8C16334D4C00E6D554 /* atmel.h */,
+				04440A8D16334D4C00E6D554 /* commands.c */,
+				04440A8E16334D4C00E6D554 /* commands.h */,
+				04440A8F16334D4C00E6D554 /* dfu-bool.h */,
+				04440A9016334D4C00E6D554 /* dfu-device.h */,
+				04440A9116334D4C00E6D554 /* dfu.c */,
+				04440A9216334D4C00E6D554 /* dfu.h */,
+				04440A9316334D4C00E6D554 /* intel_hex.c */,
+				04440A9416334D4C00E6D554 /* intel_hex.h */,
+				04440A9516334D4C00E6D554 /* main.c */,
+				04440A9616334D4C00E6D554 /* util.c */,
+				04440A9716334D4C00E6D554 /* util.h */,
+			);
+			name = "dfu-programmer";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +296,12 @@
 			files = (
 				04440A6216334B3300E6D554 /* main.m in Sources */,
 				04440A6916334B3300E6D554 /* JKSAppDelegate.m in Sources */,
+				04440A9816334D4C00E6D554 /* arguments.c in Sources */,
+				04440A9916334D4C00E6D554 /* atmel.c in Sources */,
+				04440A9A16334D4C00E6D554 /* commands.c in Sources */,
+				04440A9B16334D4C00E6D554 /* dfu.c in Sources */,
+				04440A9C16334D4C00E6D554 /* intel_hex.c in Sources */,
+				04440A9E16334D4C00E6D554 /* util.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
