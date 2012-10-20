@@ -22,6 +22,7 @@
 		04440A9B16334D4C00E6D554 /* dfu.c in Sources */ = {isa = PBXBuildFile; fileRef = 04440A9116334D4C00E6D554 /* dfu.c */; };
 		04440A9C16334D4C00E6D554 /* intel_hex.c in Sources */ = {isa = PBXBuildFile; fileRef = 04440A9316334D4C00E6D554 /* intel_hex.c */; };
 		04440A9E16334D4C00E6D554 /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = 04440A9616334D4C00E6D554 /* util.c */; };
+		04440AA116334EF100E6D554 /* JKSDeviceUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = 04440AA016334EF100E6D554 /* JKSDeviceUpdater.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,8 @@
 		04440A9516334D4C00E6D554 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = main.c; path = "dfu-programmer-0.5.4/src/main.c"; sourceTree = "<group>"; };
 		04440A9616334D4C00E6D554 /* util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = util.c; path = "dfu-programmer-0.5.4/src/util.c"; sourceTree = "<group>"; };
 		04440A9716334D4C00E6D554 /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = util.h; path = "dfu-programmer-0.5.4/src/util.h"; sourceTree = "<group>"; };
+		04440A9F16334EF100E6D554 /* JKSDeviceUpdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKSDeviceUpdater.h; sourceTree = "<group>"; };
+		04440AA016334EF100E6D554 /* JKSDeviceUpdater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKSDeviceUpdater.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +147,8 @@
 		04440A5B16334B3300E6D554 /* TimelapsePlusUpdater */ = {
 			isa = PBXGroup;
 			children = (
+				04440A9F16334EF100E6D554 /* JKSDeviceUpdater.h */,
+				04440AA016334EF100E6D554 /* JKSDeviceUpdater.m */,
 				04440A6716334B3300E6D554 /* JKSAppDelegate.h */,
 				04440A6816334B3300E6D554 /* JKSAppDelegate.m */,
 				04440A6A16334B3300E6D554 /* MainMenu.xib */,
@@ -302,6 +307,7 @@
 				04440A9B16334D4C00E6D554 /* dfu.c in Sources */,
 				04440A9C16334D4C00E6D554 /* intel_hex.c in Sources */,
 				04440A9E16334D4C00E6D554 /* util.c in Sources */,
+				04440AA116334EF100E6D554 /* JKSDeviceUpdater.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +462,7 @@
 				04440A7116334B3300E6D554 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -9,7 +9,8 @@
 #import <Cocoa/Cocoa.h>
 
 @interface JKSAppDelegate : NSObject <NSApplicationDelegate>
-
 @property (assign) IBOutlet NSWindow *window;
+
+- (IBAction)updateDevice:(id)sender;
 
 @end

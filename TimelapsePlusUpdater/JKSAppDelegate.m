@@ -7,16 +7,23 @@
 //
 
 #import "JKSAppDelegate.h"
-#import <libusb.h>
+#import "JKSDeviceUpdater.h"
 
 @implementation JKSAppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    libusb_context *usbcontext;
-    if (libusb_init(&usbcontext)) {
-        NSLog(@"can't init libusb.");
-    }
+
 }
 
+
+- (IBAction)updateDevice:(id)sender
+{
+    JKSDeviceUpdater *updater = [[JKSDeviceUpdater alloc] init];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"TODO_the_image" ofType:@""];
+    NSError *error = nil;
+    if ( ![updater eraseAndFlashWithImage:path error:&error] ) {
+        NSLog(@"fail: %@", error);
+    }
+}
 @end
