@@ -29,7 +29,8 @@
 #include "config.h"
 #include "arguments.h"
 
-int debug = 0; // Added by johan as its externed but not defined in our build
+int debug = 0; // Added by johan for TimelapsePlusUpdater as its externed in the header
+               // but defined in main.c (which we don't include in the build)
 
 struct option_mapping_structure {
     const char *name;
