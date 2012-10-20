@@ -1,0 +1,3 @@
+[submodule "libusb-xcode"]
+	path = libusb-xcode
+	url = https://github.com/ngs/libusb-xcode.git

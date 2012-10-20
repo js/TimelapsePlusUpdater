@@ -7,12 +7,16 @@
 //
 
 #import "JKSAppDelegate.h"
+#import <libusb.h>
 
 @implementation JKSAppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+    libusb_context *usbcontext;
+    if (libusb_init(&usbcontext)) {
+        NSLog(@"can't init libusb.");
+    }
 }
 
 @end

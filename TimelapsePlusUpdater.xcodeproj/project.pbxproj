@@ -13,7 +13,41 @@
 		04440A6616334B3300E6D554 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 04440A6416334B3300E6D554 /* Credits.rtf */; };
 		04440A6916334B3300E6D554 /* JKSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04440A6816334B3300E6D554 /* JKSAppDelegate.m */; };
 		04440A6C16334B3300E6D554 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04440A6A16334B3300E6D554 /* MainMenu.xib */; };
+		04440A8316334B9E00E6D554 /* libusb-compat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04440A7D16334B8000E6D554 /* libusb-compat.a */; };
+		04440A8416334B9E00E6D554 /* libusb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04440A7B16334B8000E6D554 /* libusb.a */; };
+		04440A8616334BA400E6D554 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04440A8516334BA400E6D554 /* IOKit.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04440A7A16334B8000E6D554 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04440A7216334B8000E6D554 /* libusb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8597A51E157C8FB600C7A0BC;
+			remoteInfo = usb;
+		};
+		04440A7C16334B8000E6D554 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04440A7216334B8000E6D554 /* libusb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8574A8E5157CA63F00E56B02;
+			remoteInfo = "usb-compat";
+		};
+		04440A7F16334B9800E6D554 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04440A7216334B8000E6D554 /* libusb.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8597A51D157C8FB600C7A0BC;
+			remoteInfo = usb;
+		};
+		04440A8116334B9800E6D554 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04440A7216334B8000E6D554 /* libusb.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8574A8D1157CA63F00E56B02;
+			remoteInfo = "usb-compat";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		04440A5116334B3300E6D554 /* TimelapsePlusUpdater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimelapsePlusUpdater.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,6 +63,8 @@
 		04440A6716334B3300E6D554 /* JKSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKSAppDelegate.h; sourceTree = "<group>"; };
 		04440A6816334B3300E6D554 /* JKSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKSAppDelegate.m; sourceTree = "<group>"; };
 		04440A6B16334B3300E6D554 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		04440A7216334B8000E6D554 /* libusb.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libusb.xcodeproj; path = "libusb-xcode/libusb.xcodeproj"; sourceTree = "<group>"; };
+		04440A8516334BA400E6D554 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +72,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04440A8616334BA400E6D554 /* IOKit.framework in Frameworks */,
+				04440A8316334B9E00E6D554 /* libusb-compat.a in Frameworks */,
+				04440A8416334B9E00E6D554 /* libusb.a in Frameworks */,
 				04440A5616334B3300E6D554 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,6 +85,8 @@
 		04440A4616334B3300E6D554 = {
 			isa = PBXGroup;
 			children = (
+				04440A8516334BA400E6D554 /* IOKit.framework */,
+				04440A7E16334B8400E6D554 /* External */,
 				04440A5B16334B3300E6D554 /* TimelapsePlusUpdater */,
 				04440A5416334B3300E6D554 /* Frameworks */,
 				04440A5216334B3300E6D554 /* Products */,
@@ -102,6 +143,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		04440A7316334B8000E6D554 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04440A7B16334B8000E6D554 /* libusb.a */,
+				04440A7D16334B8000E6D554 /* libusb-compat.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04440A7E16334B8400E6D554 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				04440A7216334B8000E6D554 /* libusb.xcodeproj */,
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -116,6 +174,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				04440A8016334B9800E6D554 /* PBXTargetDependency */,
+				04440A8216334B9800E6D554 /* PBXTargetDependency */,
 			);
 			name = TimelapsePlusUpdater;
 			productName = TimelapsePlusUpdater;
@@ -142,12 +202,35 @@
 			mainGroup = 04440A4616334B3300E6D554;
 			productRefGroup = 04440A5216334B3300E6D554 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 04440A7316334B8000E6D554 /* Products */;
+					ProjectRef = 04440A7216334B8000E6D554 /* libusb.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				04440A5016334B3300E6D554 /* TimelapsePlusUpdater */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		04440A7B16334B8000E6D554 /* libusb.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libusb.a;
+			remoteRef = 04440A7A16334B8000E6D554 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		04440A7D16334B8000E6D554 /* libusb-compat.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libusb-compat.a";
+			remoteRef = 04440A7C16334B8000E6D554 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		04440A4F16334B3300E6D554 /* Resources */ = {
@@ -173,6 +256,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04440A8016334B9800E6D554 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = usb;
+			targetProxy = 04440A7F16334B9800E6D554 /* PBXContainerItemProxy */;
+		};
+		04440A8216334B9800E6D554 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "usb-compat";
+			targetProxy = 04440A8116334B9800E6D554 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		04440A5E16334B3300E6D554 /* InfoPlist.strings */ = {
@@ -262,6 +358,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TimelapsePlusUpdater/TimelapsePlusUpdater-Prefix.pch";
 				INFOPLIST_FILE = "TimelapsePlusUpdater/TimelapsePlusUpdater-Info.plist";
+				OTHER_CFLAGS = (
+					"-isystem",
+					"\"$(SRCROOT)/libusb-xcode/Sources/libusb\"",
+					"-isystem",
+					"\"$(SRCROOT)/libusb-xcode/Sources/libusb-compat\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -274,6 +376,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TimelapsePlusUpdater/TimelapsePlusUpdater-Prefix.pch";
 				INFOPLIST_FILE = "TimelapsePlusUpdater/TimelapsePlusUpdater-Info.plist";
+				OTHER_CFLAGS = (
+					"-isystem",
+					"\"$(SRCROOT)/libusb-xcode/Sources/libusb\"",
+					"-isystem",
+					"\"$(SRCROOT)/libusb-xcode/Sources/libusb-compat\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
